@@ -5,10 +5,14 @@ import image from '../../img/konika.png'
 import'./ClubInfo.css'
 
 const ClubInfo = (props) => {
-    const {exerciseTime}=props
-    document.getElementById('span-p').addEventListener('click',function(e){
-        console.log(e.target)
-    })
+    const {exerciseTime}=props;
+
+    const handleAddToBreaktime=(e)=>{
+        const breakTime=document.getElementById('break-time-input')
+        breakTime.value=e.target.innerText
+        console.log(e.target.outerText)
+    }
+
     return (
         <div >
            <section className='user-info'>
@@ -34,11 +38,14 @@ const ClubInfo = (props) => {
            <section className='addABreak'>
             <h3>Add a Break</h3>
             <div className='addABreak-time'>
-                <p id='span-p'> <span >10</span>s</p>
-                <p >20<span>s</span></p>
-                <p  >30<span>s</span></p>
-                <p  >40<span>s</span></p>
-                <p  >50<span>s</span></p>
+                <button className='btn' onClick={handleAddToBreaktime}>10<span>s</span> </button>
+                <button className='btn' onClick={handleAddToBreaktime}>20<span>s</span> </button>
+                <button className='btn' onClick={handleAddToBreaktime}>30<span>s</span> </button>
+                <button className='btn' onClick={handleAddToBreaktime}>40<span>s</span> </button>
+                <button className='btn' onClick={handleAddToBreaktime}>50<span>s</span> </button>
+                
+                
+                
             </div>
            </section>
            <section className='exercise-details'>
@@ -49,7 +56,7 @@ const ClubInfo = (props) => {
             </div>
             <div className="break-time">
             <span className='break-time-label'>Break time</span>
-                <input type="text" placeholder='Break-time' />
+                <input type="text" id='break-time-input' placeholder='Break-time' />
             </div>
            </section>
            <section className='activity-complited'>

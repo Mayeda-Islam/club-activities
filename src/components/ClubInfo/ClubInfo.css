@@ -64,17 +64,18 @@
     width: 250px;
     display:  flex;
     background-color:  #f3f1ffd8;
-    padding: 4px;
+    padding: 10px;
     border-radius: 10px;
     justify-content: space-between;
 }
-.addABreak-time p{
-    border-radius: 30px ;
-    padding: 7px;
+.btn{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
     background-color: white;
     
 }
-.addABreak-time p:hover{
+.btn:hover{
     background-color: #542effc0;
     color: white;
 }

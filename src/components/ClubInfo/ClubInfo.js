@@ -1,17 +1,30 @@
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import image from "../../img/konika.png";
 import swal from "sweetalert";
 import "./ClubInfo.css";
-import fakeDb from "../Utilities/fakeDatabase";
+import {
+  getBreakTimeFromDB,
+  setBreakTimeToDB,
+} from "../Utilities/fakeDatabase";
 
 const ClubInfo = (props) => {
   const { exerciseTime } = props;
-  const [breakTime,setBreakTime]=useState(null)
+  const [breakTime, setBreakTime] = useState(0);
+
+  const localBreakTime = getBreakTimeFromDB();
+
+
+  useEffect(() => {
+    if (localBreakTime) {
+      setBreakTime(localBreakTime);
+    }
+  }, [localBreakTime]);
 
   const handleAddToBreakTime = (time) => {
-    setBreakTime(`${time} second`)
+    setBreakTime({time} );
+    setBreakTimeToDB(time); // saving value to local storage
   };
   // sweet alert
   const sweetAlert = () => {
@@ -21,7 +34,6 @@ const ClubInfo = (props) => {
       icon: "success",
       button: "ok!",
     });
-    fakeDb();
   };
   const breakTimeButtons = [
     { label: 10, value: 10 },
@@ -63,7 +75,10 @@ const ClubInfo = (props) => {
         <h3>Add a Break</h3>
         <div className="addABreak-time">
           {breakTimeButtons.map((timeButton) => (
-            <button className="btn" onClick={() => handleAddToBreakTime(timeButton.value)}>
+            <button
+              className="btn"
+              onClick={() => handleAddToBreakTime(timeButton.value)}
+            >
               {timeButton.label}
             </button>
           ))}
@@ -79,14 +94,19 @@ const ClubInfo = (props) => {
             id="exercise-time-input"
             type="text"
             value={`${exerciseTime} second`}
-            placeholder= "exercise-time"
+            placeholder="exercise-time"
           />
         </div>
         <div className="break-time">
           <span id="break-time-label" className="break-time-label">
             Break time
           </span>
-          <input type="text" id="break-time-input" value={breakTime} placeholder="Break-time" />
+          <input
+            type="text"
+            id="break-time-input"
+            value={`${breakTime} second`}
+            placeholder="Break-time"
+          />
         </div>
       </section>
       <section className="activity-complited">

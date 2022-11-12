@@ -6,12 +6,19 @@ const QuesAns = () => {
         <div className='qus-ans-section'>
             <section>
             <h1>How does react work?</h1>
-            <p>Ans:ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components
+            <p>Ans:ReactJS divides the UI into isolated reusable 
+                pieces of code known as components. React components
+                 work similarly to JavaScript functions as they accept
+                  arbitrary inputs called properties or props. It's
+                   possible to have as many components
                  as necessary without cluttering your code.</p>
             </section>
             <section>
                 <h1>Difference between state and props.</h1>
-                <p>While both hold information that influences the output of render, they are different in one important way: props get passed to the component (similar to function parameters) whereas state is managed within the component
+                <p>While both hold information that influences the 
+                    output of render, they are different in one important way:
+                     props get passed to the component (similar to function parameters) 
+                     whereas state is managed within the component
                      (similar to variables declared within a function).</p>
                 <br />
                 <h3>State</h3>

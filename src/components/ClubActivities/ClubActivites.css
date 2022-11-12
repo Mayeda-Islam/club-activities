@@ -10,5 +10,9 @@
 @media screen and (max-width: 992px) {
     .activities{
         grid-template-columns: 1fr;
+        
+    }
+    .activities-title{
+        text-align: center;
     }
 }

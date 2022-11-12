@@ -6,14 +6,15 @@ import './ClubContainer.css'
 
 const ClubContainer = () => {
     const [activities,setActivities]=useState([])
-    const [exerciseTime,setExerciseTime]=useState(0)
+    const [exerciseTime,setExerciseTime]=useState(null)
     useEffect(()=>{
         fetch('fakedata.json')
         .then(res=>res.json())
         .then(data=>setActivities(data))
     },[])
-   
+    
     const handleAddToList=(requireTime)=>{
+        console.log(requireTime)
        const newExerciseTime=exerciseTime+requireTime
         setExerciseTime(newExerciseTime)
     }

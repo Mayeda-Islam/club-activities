@@ -1,0 +1,116 @@
+.club-info{
+   background-color: white;
+   display: flex;
+
+}
+.club-info img{
+    width: 60px;
+    height: 60px;
+    border-radius:70px;
+}
+.user-info{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center
+}
+.user-name{
+    margin-left: 10px;
+}
+.user-name h3{
+    margin-top: 0px;    
+    margin-bottom: 0px;
+}
+
+.user-location{
+    color: #515151;
+}
+.user-location small{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: normal;
+}
+.user{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 8px;
+    font-weight: 500;
+    font-size: small;
+   
+}
+.weight,.height,.age{
+    font-size: large;
+    font-weight: 700;
+}
+.user p{
+    margin-top: 0;
+    color: #515151e0;
+}
+.user-weight-age{
+    background-color:  #f3f1ffd8;
+    display: flex;
+    justify-content: space-between;
+    margin:30px;
+    width: 250px;
+    border-radius: 10px;
+}
+.user-weight-age small{
+    color: #51515196;
+}
+.addABreak{
+    margin-left: 30px;
+}
+.addABreak-time{
+    width: 250px;
+    display:  flex;
+    background-color:  #f3f1ffd8;
+    padding: 4px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.addABreak-time p{
+    border-radius: 30px ;
+    padding: 7px;
+    background-color: white;
+    
+}
+.addABreak-time p:hover{
+    background-color: #542effc0;
+    color: white;
+}
+.exercise-details{
+    margin-left: 30px;
+    width: 250px;
+}
+.exercise-time,.break-time{
+    display: flex;
+    margin-bottom: 30px;
+ 
+}
+.exercise-time> input,.break-time>input{
+ background-color: #f3f1ffd8;
+ border-radius:0 10px 10px 0;
+ font-size: 15px;
+ padding-right: 10px;
+ width: 50%;
+ border: none;
+}
+.exercise-time-label,.break-time-label{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 18px 22px;
+    width: 50%;
+    background-color: #f3f1ffd8 ;
+    border-radius:10px 0px 0px 10px;
+}
+/* button */
+.activity-complited-btn{
+    background-color: #542effc0;
+    border: none;
+    color: white;
+    width: 250px;
+    margin-left: 30px;
+    padding: 20px;
+    font-size: medium;
+    border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+.activities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 45px;
+    margin:5%;
+}
+.activities-title{
+    margin: 5%;
+}

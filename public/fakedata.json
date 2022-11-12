@@ -2,6 +2,7 @@
     {
       "_id": "636f1918b332469e430a8300",
       "img":"https://i.ibb.co/mGNZ6fT/chess.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "27-40",
       "name": "Chess",
       "time_required": 30
@@ -9,6 +10,7 @@
     {
       "_id": "636f1918d4586b345537d831",
       "img":"https://i.ibb.co/kMzstXC/pool.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "37-32",
       "name": "Pool",
       "time_required": 39
@@ -16,6 +18,7 @@
     {
       "_id": "636f1918b92ba3c8ab4b9daf",
       "img":"https://i.ibb.co/KbLwksh/football.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "32-21",
       "name": "Foot ball",
       "time_required": 25
@@ -23,6 +26,7 @@
     {
       "_id": "636f19186a0cf6b3490b6b97",
       "img":"https://i.ibb.co/3RdnwS1/tennis.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "20-32",
       "name": "Tenis",
       "time_required": 26
@@ -30,6 +34,7 @@
     {
       "_id": "636f1918c9c5cee77ed0d2c4",
       "img":"https://i.ibb.co/ZM3cQYj/dartboard.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "34-26",
       "name": "Dart ball",
       "time_required": 25
@@ -37,8 +42,9 @@
     {
       "_id": "636f191863d8e0aae832c474",
       "img":"https://i.ibb.co/hRZr49B/ludu.png",
+      "description":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
       "age": "27-36",
-      "name": "Camille England",
+      "name": "ludu",
       "time_required": 21
     }
   ]

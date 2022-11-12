@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import image from '../../img/konika.png'
+import swal from 'sweetalert'
 import'./ClubInfo.css'
 
 const ClubInfo = (props) => {
@@ -12,7 +13,18 @@ const ClubInfo = (props) => {
         breakTime.value=e.target.innerText
         console.log(e.target.outerText)
     }
+    // sweet alert
+   const sweetAlert=()=>{
+    swal({
+        title: "Congratulations!",
+        text: "You have completed !",
+        icon: "success",
+        button: "ok!",
+      });
 
+
+   }
+      
     return (
         <div >
            <section className='user-info'>
@@ -60,7 +72,7 @@ const ClubInfo = (props) => {
             </div>
            </section>
            <section className='activity-complited'>
-            <button className=' activity-complited-btn'>Activity completed</button>
+            <button onClick={()=>sweetAlert()} className=' activity-complited-btn'>Activity completed</button>
            </section>
         </div>
     );

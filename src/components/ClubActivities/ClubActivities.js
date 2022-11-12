@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+
 import Activity from '../Activity/Activity';
 import'./ClubActivites.css'
-const ClubActivities = () => {
-    const [activities,setActivities]=useState([])
-    useEffect(()=>{
-        fetch('fakedata.json')
-        .then(res=>res.json())
-        .then(data=>setActivities(data))
-    },[])
-
+const ClubActivities = (props) => {
+    const {activities}=props
+    const {handleAddToList}=props
+    
     return (
         <div>
             <div className='activities-title'>
@@ -17,7 +13,7 @@ const ClubActivities = () => {
             </div>
            <div className='activities'>
            {
-            activities.map(activity=><Activity activity={activity}
+            activities.map(activity=><Activity handleAddToList={handleAddToList}  activity={activity}
             key={activity._id}></Activity>)
            }
            </div>

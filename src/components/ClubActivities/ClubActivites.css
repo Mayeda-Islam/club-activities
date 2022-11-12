@@ -7,3 +7,8 @@
 .activities-title{
     margin: 5%;
 }
+@media screen and (max-width: 992px) {
+    .activities{
+        grid-template-columns: 1fr;
+    }
+}

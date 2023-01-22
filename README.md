@@ -12,6 +12,8 @@ This project was build by React and bootstrap [Club Activities](https://club-act
 - Home page has cards of Club Activities
 - Each Card has event handler which makes the site interactive with user
 
+* Use sweet alert for confirmation alert
+
 ### Author Name: Mayeda Islam
 
 ### Website Name: Club Activities [Club Activities](https://club-activities.netlify.app/).
